@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700&display=swap"
+      rel="stylesheet">
+    <title>Poohkan's Note</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+<form>
+    <!-- Text Input -->
+    <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" 
+               placeholder="name@example.com">
+        <div class="form-text">We'll never share your email.</div>
+    </div>
+    
+    <!-- Password -->
+    <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password">
+    </div>
+    
+    <!-- Select -->
+    <div class="mb-3">
+        <label for="country" class="form-label">Country</label>
+        <select class="form-select" id="country">
+            <option selected>Choose...</option>
+            <option value="th">Thailand</option>
+            <option value="us">USA</option>
+        </select>
+    </div>
+    
+    <!-- Textarea -->
+    <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" rows="3"></textarea>
+    </div>
+    
+    <!-- Checkbox -->
+    <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" id="agree">
+        <label class="form-check-label" for="agree">
+            I agree to the terms
+        </label>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+</body>
+</html>
