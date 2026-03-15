@@ -31,12 +31,12 @@ table{
 th{
     background-color: #59acff;
     color: rgb(255, 255, 255);
-    padding: 12px;
+    padding: 25px;
 }
 
 td{
     border-top: 1px solid rgb(175, 175, 175);
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     border-bottom: 1px solid #ddd;
 }
@@ -47,12 +47,12 @@ tr:hover{
 
 .button{
     text-decoration: none;
+    font-weight: bold;
     color: rgb(255, 255, 255);
     background-color: #2ec95d;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding: 22px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     border-radius: 4px;
 }
 
