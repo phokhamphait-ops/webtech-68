@@ -1,104 +1,115 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dormitory Around University</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <style>
-
-body{
+body {
     font-family: Arial;
-    margin:0;
-    background-color:#f0f7f0;
+    background-color: #f0f7f0;
 }
 
-header{
-    background:#2e8b57;
-    color:white;
-    text-align:center;
-    padding:20px;
+header {
+    background: #2e8b57;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
-nav{
-    background:#dff5e1;
-    text-align:center;
-    padding:10px;
+nav.mynav {
+    background: #dff5e1;
+    text-align: center;
+    padding: 10px;
 }
 
-nav a{
-    margin:15px;
-    text-decoration:none;
-    color:#2e8b57;
-    font-weight:bold;
-}
-nav a:hover{
-    color:white;
-    background-color:#228B22;
-    padding:5px 8px;
-    border-radius:5px;
+nav.mynav a {
+    margin: 15px;
+    text-decoration: none;
+    color: #2e8b57;
+    font-weight: bold;
 }
 
-section{
-    text-align:center;
-    padding:30px;
+nav.mynav a:hover {
+    color: white;
+    background-color: #228B22;
+    padding: 5px 8px;
+    border-radius: 5px;
 }
 
-img{
-    width:400px;
-    border-radius:10px;
+.carousel-item img {
+    height: 360px;
+    object-fit: cover;
 }
 
-.box{
-    background:white;
-    width:60%;
-    margin:auto;
-    padding:20px;
-    border-radius:10px;
+footer {
+    background: #2e8b57;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
 }
-
-footer{
-    background:#2e8b57;
-    color:white;
-    text-align:center;
-    padding:10px;
-    margin-top:30px;
-}
-
 </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Dormitory Around University</h1>
-        <p>เว็บไซต์รวบรวมหอพักรอบ ม.ศิลปากร พระราชวังสนามจันทร์</p>
-    </header>
+<header>
+    <h1>Dormitory Around University</h1>
+    <p>เว็บไซต์รวบรวมหอพักรอบ ม.ศิลปากร พระราชวังสนามจันทร์</p>
+</header>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="dormitory.html">details</a>
-        <a href="#">Dormitory</a>
-        <a href="#">About</a>
-    </nav>
+<nav class="mynav">
+    <a href="#">Home</a>
+    <a href="dormitory.html">Dormitory</a>
+    <a href="detail1.html">Details</a>
+    <a href="map.html">Map</a>
+    <a href="about.html">About</a>
+</nav>
 
-    <section>
+<section class="text-center py-4">
 
-        <img src="silpakorn.jpg">
+    <div id="myCarousel" class="carousel slide mx-auto mb-4" style="max-width:600px;" data-bs-ride="carousel">
 
-        <div class="box">
-
-        <h2>Welcome</h2>
-
-        <p>
-        เว็บไซต์นี้รวบรวมหอพักรอบมหาวิทยาลัย เพื่อช่วยให้นักศึกษาสามารถค้นหาหอพัก ดูรูป ราคา และตำแหน่งที่ตั้งของหอพักได้ง่ายขึ้น
-        </p>
-
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
         </div>
 
-    </section>
-    <footer>
-        <p>Group Name : chai si mee kiew</p>
-    </footer>
+        <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+                <img src="silpakorn.png" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="image1.png" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="image2.png" class="d-block w-100">
+            </div>
+        </div>
 
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+
+    <div class="card mx-auto p-4" style="max-width:600px;">
+        <h2>Welcome</h2>
+        <p>เว็บไซต์นี้รวบรวมหอพักรอบมหาวิทยาลัย เพื่อช่วยให้นักศึกษาสามารถค้นหาหอพัก ดูรูป ราคา และตำแหน่งที่ตั้งของหอพักได้ง่ายขึ้น</p>
+    </div>
+
+</section>
+
+<footer>
+    <p>Group Name : chai si mee kiew</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
